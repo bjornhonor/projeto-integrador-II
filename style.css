@@ -1,0 +1,272 @@
+* {
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+ 
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    align-items: center;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #fff, #000);}
+
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+}
+
+.nav-itens>li>a {
+    padding-left: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.gerarId {
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #202020;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+  
+.logo{
+  width: 80px; 
+  margin-top: 20px; 
+  position: fixed;
+  top: 0; 
+  
+}
+
+
+  
+  .container-input {
+    max-width: 480px;
+    margin: 14px 0;
+    text-align: center;
+  }
+  
+  .container-input span {
+    color: #FFF;
+    font-size: 22px;
+  }
+  
+  .slider {
+    margin-top: 8px;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 18px;
+    border-radius: 5px;
+    background: #666;
+    outline: none;
+    opacity: 0.7;
+  }
+  
+  .button-cta {
+    height: 40px;
+    margin-top: 40px;
+    background-color: #FF9900;
+    border: 0;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .container-password {
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .title {
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .password {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border-radius: 4px;
+    transition: transform 0.5s;
+  }
+  
+  .password:hover {
+    transform: scale(1.05);
+    border-color: #FFF;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .tooltip {
+    color: #FFF;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    background: #333;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    text-align: center;
+  }
+  
+  .container-password:hover .tooltip {
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  adicionar-servico {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    color: #333;
+    font-size: 18px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ffce1f;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #ffe863;
+}
+
+footer {
+    color: #FFF;
+    margin-top: 20px;
+}
+
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(33.33% - 20px); 
+    margin: 10px 0;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    width: calc(33.33% - 20px); 
+    border-radius: 4px;
+}
+
+.header{
+   width: 600px;
+   padding-top: 40px;
+   
+   
+}
+
+.cliente {
+    text-align: center;
+}
+
+.adicionar-servico-btn {
+    text-decoration: none;
+    color: #333; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adicionar-servico-btn img {
+    width: 100px; 
+    height: 100px; 
+}
+
+.adicionar-servico-btn p {
+    margin-top: 10px; 
+}
+
+
+.imagemID{
+width: 500px;
+align-items: center;
+}
+
+.btnsInicial{
+  background-color: #ffce1f;
+  display
+  color: #FFF;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}

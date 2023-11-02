@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Gerador de senhas">
+  <link rel="stylesheet" href="ID.css">
+  <title>Gerador de ID do cliente</title>
+  <script src="ID.js"></script>
+</head>
+<body>
+  <div class="container-input">
+    <span class="title">Clique no botão para gerar seu cartão:</span>
+    <button id="button" class="button-cta" onclick="gerarID()">Gerar cartão</button>
+  
+
+  <div id="container-password" onclick="copiarID()" class="container-password hide">
+    <span class="title">Seu ID gerado:</span>
+    <span id="password" class="password"></span>
+    <span class="tooltip">Clique no numero para copiar o codigo.</span>
+  </div>
+</div>
+</body>
+</html>
