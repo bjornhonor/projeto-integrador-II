@@ -14,7 +14,7 @@ body {
     background-image: url(../assets/logo.png);
     background-size: contain;
     background-position: center;
-    height: 100vh; /* Adicionando esta linha para preencher a tela verticalmente */
+    height: 100vh; 
 }
 
 .container-input {
@@ -35,7 +35,7 @@ body {
     color: white;
     background-color: #333;
     font-size: 28px;
-    margin: 20px 0; /* Reduzindo a margem superior e inferior */
+    margin: 20px 0; 
 }
 
 .button-cta {
@@ -48,14 +48,14 @@ body {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    margin-bottom: 20px; /* Adicionando margem inferior */
+    margin-bottom: 20px; 
     margin-top: 20px;
 }
 
 .container-password {
     text-align: center;
     cursor: pointer;
-    margin-top: 10px; /* Adicionando margem superior */
+    margin-top: 10px; 
 }
 
 .password {

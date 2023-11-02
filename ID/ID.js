@@ -1,48 +1,48 @@
-// Função para gerar um número de identificação aleatório
+// funcao para gerar id aleatorio
 function gerarID() {
-    // Gere um número de identificação aleatório, por exemplo, entre 1000 e 9999
     const id = Math.floor(Math.random() * 9000) + 1000;
 
-    // Atualize o elemento de senha com o número gerado
+    // atualiza a senha
     const passwordElement = document.getElementById('password');
     passwordElement.textContent = id;
 
-    // Exiba a div .container-password
+    // exibe a senha no tooltip
     const containerPassword = document.querySelector('.container-password');
     containerPassword.classList.remove('hide');
 
-    // Desative o botão
+    // desativa o botao
     const button = document.getElementById('button');
     button.disabled = true;
     button.classList.add('disabled-button');
 }
 
+//funcao que copia o id gerado
 function copiarID() {
     const button = document.getElementById('button');
     
-    // Verifique se o botão está desabilitado
+    // so funciona se o botao tiver sido desabilitado
     if (button.disabled) {
         const passwordElement = document.getElementById('password');
         const idToCopy = passwordElement.textContent;
 
-        // Crie um elemento de input para copiar o texto
+        // cria um input pra poder copiar o id
         const input = document.createElement('input');
         input.value = idToCopy;
 
-        // Anexa o elemento de input ao corpo do documento
+        // adiciona o elemento input criado
         document.body.appendChild(input);
 
-        // Seleciona o texto no input
+        // seleciona o texto desse input no caso o id
         input.select();
         input.setSelectionRange(0, 99999);
 
-        // Copia o texto selecionado para a área de transferência
+        // copia o valor pra area de transferencia
         document.execCommand('copy');
 
-        // Remove o elemento de input
+        // remove o elemento do documento
         document.body.removeChild(input);
 
-        // Mostra uma mensagem de feedback
+        // colcoa um texto no hover do tooltip
         const tooltip = document.querySelector('.tooltip');
         tooltip.textContent = 'Código copiado!';
     }
