@@ -6,23 +6,19 @@
   <meta name="keywords" content="Gerador de senhas">
   <link rel="stylesheet" href="ID.css">
   <title>Gerador de ID do cliente</title>
+  <script src="ID.js"></script>
 </head>
 <body>
-  <div class="header">
-    <img  src="assets/logo.png" alt="Gerador ID logo">
-  </div>
-
   <div class="container-input">
     <span class="title">Clique no botão para gerar seu cartão:</span>
     <button id="button" class="button-cta" onclick="gerarID()">Gerar cartão</button>
-  </div>
+  
 
   <div id="container-password" onclick="copiarID()" class="container-password hide">
-    <span class="title">Seu cartão foi gerado:</span>
+    <span class="title">Seu ID gerado:</span>
     <span id="password" class="password"></span>
     <span class="tooltip">Clique no numero para copiar o codigo.</span>
   </div>
-
-  <script src="script.js"></script>
+</div>
 </body>
 </html>
